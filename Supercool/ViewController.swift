@@ -31,7 +31,7 @@ class ViewController: UIViewController, FUIAuthDelegate {
         ref = Database.database().reference()
         var article = ["article" : "life", "content": "is", "tag": "a shit"]
         
-        ref?.child("User").child(user!.uid).setValue(article)
+        ref?.child("User").child(user!.uid).childByAutoId().setValue(article)
         
         
     }
@@ -45,20 +45,20 @@ class ViewController: UIViewController, FUIAuthDelegate {
         // You need to adopt a FUIAuthDelegate protocol to receive callback
         authUI?.delegate = self
         
-        //create user
-        Auth.auth().createUser(withEmail: "456@123.123.123", password: "123456") { (user, error) in
-            // ...
-            if error == nil && user != nil {
-                print("sign up")
-                print("name = \(user?.displayName), email = \(user?.email)")
-
-            }else {
-                print("error creating user \(error?.localizedDescription)")
-            }
-        }
+//        //create user
+//        Auth.auth().createUser(withEmail: "123@123.123.123", password: "123456") { (user, error) in
+//            // ...
+//            if error == nil && user != nil {
+//                print("sign up")
+//                print("name = \(user?.displayName), email = \(user?.email)")
+//
+//            }else {
+//                print("error creating user \(error?.localizedDescription)")
+//            }
+//        }
         
         //sign in user
-        Auth.auth().signIn(withEmail: "456@123.123.123", password: "123456"){ (user, error) in
+        Auth.auth().signIn(withEmail: "123@123.123.123", password: "123456"){ (user, error) in
                         // ...
                         if error == nil && user != nil {
                             print("sign in")
@@ -70,6 +70,8 @@ class ViewController: UIViewController, FUIAuthDelegate {
                         }
                     }
 
+        
+        
         
         
        
@@ -94,7 +96,26 @@ class ViewController: UIViewController, FUIAuthDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func readArticle(_ sender: Any) {
+        
+        let userID = Auth.auth().currentUser?.uid
+        ref = Database.database().reference()
 
+        ref?.child("User").child(userID!).observe(.value, with: { (snapshot) in
+            // Get user value
+            if let users = snapshot.value as? NSDictionary {
+            
+                for (key, value) in users {
+                    print(value)
+                }
+            }
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
 }
 
 struct Article {

@@ -19,14 +19,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9Z-3b-ltQ">
-                                <rect key="frame" x="263" y="41" width="44" height="30"/>
+                                <rect key="frame" x="262" y="41" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.87074519230769232" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="廢文">
+                                <state key="normal" title="發廢文">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kh3-S3-Sas"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkk-Zr-Vpd">
+                                <rect key="frame" x="217" y="180" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89530456849999995" green="0.53369172220000005" blue="0.22709180170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="讀廢文"/>
+                                <connections>
+                                    <action selector="readArticle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iPD-Nl-ZmW"/>
                                 </connections>
                             </button>
                         </subviews>
