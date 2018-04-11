@@ -14,6 +14,8 @@
 		B72F0B3F207BA7D3003C21E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72F0B3E207BA7D3003C21E8 /* Assets.xcassets */; };
 		B72F0B42207BA7D3003C21E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72F0B40207BA7D3003C21E8 /* LaunchScreen.storyboard */; };
 		B72F0B4A207BA996003C21E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B72F0B49207BA996003C21E8 /* GoogleService-Info.plist */; };
+		B7F9A021207CFD4D00C60509 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F9A01F207CFD4D00C60509 /* CustomTableViewCell.swift */; };
+		B7F9A022207CFD4D00C60509 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F9A020207CFD4D00C60509 /* CustomTableViewCell.xib */; };
 		CD090A55B2589761C613FF5E /* Pods_Supercool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5A892EA73D77B8027CE902 /* Pods_Supercool.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		B72F0B41207BA7D3003C21E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B72F0B43207BA7D3003C21E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B72F0B49207BA996003C21E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7F9A01F207CFD4D00C60509 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		B7F9A020207CFD4D00C60509 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		DA981C0F57594482B31E64D5 /* Pods-Supercool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supercool.release.xcconfig"; path = "Pods/Target Support Files/Pods-Supercool/Pods-Supercool.release.xcconfig"; sourceTree = "<group>"; };
 		EF5A892EA73D77B8027CE902 /* Pods_Supercool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Supercool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 				B72F0B40207BA7D3003C21E8 /* LaunchScreen.storyboard */,
 				B72F0B43207BA7D3003C21E8 /* Info.plist */,
 				B72F0B3B207BA7D3003C21E8 /* Supercool.xcdatamodeld */,
+				B7F9A01F207CFD4D00C60509 /* CustomTableViewCell.swift */,
+				B7F9A020207CFD4D00C60509 /* CustomTableViewCell.xib */,
 			);
 			path = Supercool;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 				B72F0B42207BA7D3003C21E8 /* LaunchScreen.storyboard in Resources */,
 				B72F0B4A207BA996003C21E8 /* GoogleService-Info.plist in Resources */,
 				B72F0B3F207BA7D3003C21E8 /* Assets.xcassets in Resources */,
+				B7F9A022207CFD4D00C60509 /* CustomTableViewCell.xib in Resources */,
 				B72F0B3A207BA7D3003C21E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +242,7 @@
 			files = (
 				B72F0B3D207BA7D3003C21E8 /* Supercool.xcdatamodeld in Sources */,
 				B72F0B37207BA7D3003C21E8 /* ViewController.swift in Sources */,
+				B7F9A021207CFD4D00C60509 /* CustomTableViewCell.swift in Sources */,
 				B72F0B35207BA7D3003C21E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
